@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RutgerFJ</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <img src="assets/img/logo.svg" alt="logo" id="logo">
+    </header>
+    <main>
+        <section id="about"> <!-- hero item: about me -->
+            <div id="profile-container">
+                <img src="assets/img/profile.png" alt="profile photo" id="profile-photo">
+                <nav id="socials"> <!-- github, linkedin, e-mail -->
+                    <a class="button" href="http://github.com/rutgerfj">
+                        <img src="assets/img/github.svg" alt="GitHub" id="github">
+                    </a>
+                    <a class="button" href="http://linkedin.com/in/rutgerfjansen">
+                        <img src="assets/img/linkedin.svg" alt="LinkedIn" id="linkedin">
+                    </a>
+                    <a class="button" href="mailto:rutgerfjansen@gmail.com">
+                        <img src="assets/img/email.svg" alt="email" id="email">
+                    </a>
+                </nav>
+            </div>
+            <div>
+                <p>Hi, I'm</p>
+                <p class="name">Rutger Jansen,</p>
+                <p class="oneliner">a bio-informatics student.</p>
+                <p class="description">
+                    I have a passion for people, programming and sports.
+                    Currently, I'm studying and working at the University of Applied Sciences in Leiden.
+                    In my free time, I like cycling and weightlifting. Since 2023 I've also been exploring web
+                    development.
+                    Take a look at the projects I've been working on!
+                </p>
+            </div>
+        </section>
+
+        <section id="projects"> <!-- projects -->
+            <!-- alternating left/right text/image -->
+            <div class="project-container">
+                <div class="project-description">
+                    <h2>BISA</h2>
+                    <p class="description">
+                        BISA stands for "Bio-informatics student-assistant" and is a passion project made to simplify
+                        the
+                        shift
+                        planning for student-assistants at the University of Applied Sciences in Leiden. The project
+                        is currently in development.
+                    </p>
+                    <p class="technology">
+                        <span class="tech">HTML</span> - <span class="tech">CSS</span> - <span class="tech">JS</span> -
+                        <span class="tech">Python</span> - <span class="tech">Django</span> - <span
+                            class="tech">SQLite</span> - <span class="tech">HTMX</span>
+                    </p>
+                </div>
+                <img src="assets/img/projects/BISA/list.png" alt="BISA activity list" class="screenshot">
+                <img src="assets/img/projects/BISA/calendar.png" alt="BISA activity calendar" class="screenshot">
+            </div>
+            <div class="project-container">
+                <img src="assets/img/projects/Stravis/overview.png" alt="Stravis overview" class="screenshot">
+                <img src="assets/img/projects/Stravis/cycling.png" alt="Stravis cycling" class="screenshot">
+                <img src="assets/img/projects/Stravis/weighttraining.png" alt="Stravis weight training"
+                    class="screenshot">
+                <div class="project-description">
+                    <h2>Stravis</h2>
+                    <p class="description">
+                        My first Django application. After using Strava to track my sports activities for about 3 years,
+                        I
+                        longed for a better way to visualize my activities. Hence the name "Stravis". The application
+                        allows
+                        users to connect to their Strava account, download their activities and creates multiple
+                        customizable
+                        plots.
+                    </p>
+                    <p class="technology">
+                        <span class="tech">HTML</span> - <span class="tech">CSS</span> - <span class="tech">JS</span> -
+                        <span class="tech">Python</span> - <span class="tech">Django</span> - <span
+                            class="tech">SQLite</span> - <span class="tech">D3</span> - <span class="tech">Bokeh</span>
+                    </p>
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="project-description">
+                    <h2>Erato</h2>
+                    <p class="description">
+                        The final Django project made for my Minor Application Development during my study. In a group
+                        of 3,
+                        we
+                        worked with an external client to create a web application that handles grade administration for
+                        students.
+                        The client had a lot of specific requirements, which no other grade administration system
+                        satisfied.
+                        I was primarily responsible for communicating with the client and leading meetings, which I
+                        thoroughly
+                        enjoyed!
+                    </p>
+                    <p class="technology">
+                        <span class="tech">HTML</span> - <span class="tech">CSS</span> - <span class="tech">JS</span> -
+                        <span class="tech">Python</span> - <span class="tech">Django</span> - <span
+                            class="tech">PostgreSQL</span> - <span class="tech">HTMX</span>
+                    </p>
+                </div>
+                <img src="assets/img/projects/Erato/login.png" alt="Erato login" class="screenshot">
+                <img src="assets/img/projects/Erato/overview.png" alt="Erato overview" class="screenshot">
+                <img src="assets/img/projects/Erato/results.png" alt="Erato results" class="screenshot">
+            </div>
+            <div class="project-container">
+                <div class="project-description">
+                    <h2>MasterBlast</h2>
+                    <p class="description">
+                        This application was part of my Minor Application Development during my study. Our group of 4
+                        students
+                        worked with another group of students as a client. The client tasked us with creating a wrapper
+                        for
+                        NCBI's BLAST (a bio-informatics tool). The application allowed users to store their BLAST
+                        queries
+                        and
+                        results, aswell as share them with other users.
+                    </p>
+                    <p class="technology">
+                        <span class="tech">HTML</span> - <span class="tech">CSS</span> - <span class="tech">JS</span> -
+                        <span class="tech">Python</span> - <span class="tech">Django</span> - <span
+                            class="tech">SQLite</span>
+                    </p>
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="project-description">
+                    <h2>Reedsnake</h2>
+                    <p class="description">
+                        A Snakemake pipeline for the analysis of DNA sequencing data.
+                        Wrote custom scripts for the quality control and trimming of the reads and used existing tools
+                        to
+                        perform
+                        both a reference-based and a de novo assembly.
+                    </p>
+                    <p class="technology">
+                        <span class="tech">Python</span> - <span class="tech">Snakemake</span> - <span
+                            class="tech">Bash</span>
+                    </p>
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="project-description">
+                    <h2>COGselect</h2>
+                    <p class="description">
+                        The application that made me fall in love with web development! The application is very simple,
+                        allowing
+                        the user to connect to a PostgreSQL database and download clusters of orthologous genes (COGs).
+                        The
+                        application visualizes these clusters and allows filtering, so the user can select clusters that
+                        they
+                        deem interesting.
+                    </p>
+                    <p class="technology">
+                        <span class="tech">HTML</span> - <span class="tech">CSS</span> -
+                        <span class="tech">Python</span> - <span class="tech">Flask</span> - <span
+                            class="tech">PostgreSQL</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/toggleSection.js"></script>
+</body>
+
+</html>
