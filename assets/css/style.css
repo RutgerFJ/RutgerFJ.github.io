@@ -50,9 +50,14 @@ main {
     margin: auto;
 }
 
-svg {
-    height: 3rem;
-    fill: #ffffff;
+@media screen and (max-width: 768px) {
+    main {
+        width: 100vw;
+    }
+
+    .screenshot {
+        align-self: center;
+    }
 }
 
 /* About section */
@@ -127,12 +132,12 @@ button:hover {
     display: none;
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 3rem;
 }
 
 p.technology {
-    color: grey;
-    font-size: 0.8rem;
+    color: var(--text-color-dark);
+    font-size: 0.85rem;
     user-select: none;
 }
 
@@ -147,11 +152,22 @@ span.tech:hover {
 
 .project-container {
     display: flex;
+    flex-direction: column;
     gap: 5px;
 }
 
 .project-container:nth-of-type(even) {
     text-align: right;
+    justify-content: end;
+}
+
+.screenshot-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.screenshot-container.even {
+    justify-content: end;
 }
 
 .screenshot {
@@ -168,11 +184,11 @@ span.tech:hover {
 
 .screenshot:hover {
     transition-delay: 0.35s;
-    transform: translateX(-250px) scale(12);
+    transform: translateX(250px) scale(12);
     opacity: 100%;
     z-index: 99;
 }
 
 .project-container:nth-of-type(even) .screenshot:hover {
-    transform: translateX(250px) scale(12);
+    transform: translateX(-250px) scale(12);
 }
