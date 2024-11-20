@@ -59,7 +59,7 @@ main {
 
     #about {
         flex-direction: column;
-        margin-top: 5vh;
+        margin-top: 3rem;
     }
 
     .screenshot {
