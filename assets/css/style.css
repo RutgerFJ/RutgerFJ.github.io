@@ -3,7 +3,6 @@
     --yellow: #fad02c;
     --text-color-faded: #c8c8c8;
     --text-color-dark: #707070;
-    --logo-width: 20rem;
 }
 
 /* General */
@@ -43,6 +42,7 @@ p {
 }
 
 #logo {
+    --logo-width: 20rem;
     width: var(--logo-width);
     margin-left: calc((100vw - var(--logo-width)) / 2);
 }
@@ -52,26 +52,12 @@ main {
     margin: auto;
 }
 
-@media screen and (max-width: 768px) {
-    main {
-        width: 80vw;
-    }
-
-    #about {
-        flex-direction: column;
-    }
-
-    .screenshot {
-        align-self: center;
-    }
-}
-
 /* About section */
 
 #about {
     display: flex;
     gap: 2rem;
-    height: 70dvh;
+    height: 30rem;
     align-items: center;
 }
 
@@ -140,11 +126,10 @@ button:hover {
 /* Projects section */
 
 #projects {
-    margin-top: 10rem;
-    display: none;
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    margin-top: 3rem;
 }
 
 p.technology {
@@ -176,10 +161,12 @@ span.tech:hover {
 .screenshot-container {
     display: flex;
     gap: 0.5rem;
+    max-width: 100%;
+    overflow: scroll;
 }
 
 .screenshot-container.even {
-    justify-content: end;
+    align-self: end;
 }
 
 .screenshot {
@@ -194,13 +181,13 @@ span.tech:hover {
     opacity: 50%;
 }
 
-.screenshot:hover {
-    transition-delay: 0.35s;
-    transform: translateX(250px) scale(8);
-    opacity: 100%;
-    z-index: 99;
-}
+@media screen and (max-width: 1000px) {
+    main {
+        width: 80vw;
+    }
 
-.project-container:nth-of-type(even) .screenshot:hover {
-    transform: translateX(-250px) scale(8);
+    #about {
+        flex-direction: column;
+        height: fit-content;
+    }
 }
