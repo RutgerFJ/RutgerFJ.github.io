@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <img src="assets/img/logo.svg" alt="logo" id="logo">
     </header>
     <main>
@@ -29,7 +29,8 @@
                     </a>
                 </nav>
             </div>
-            <div>
+            <div id="profile-description">
+                <h1># About</h1>
                 <p>Hi, I'm</p>
                 <p class="name">Rutger Jansen,</p>
                 <p class="oneliner">a bio-informatics student.</p>
@@ -44,6 +45,7 @@
         </section>
 
         <section id="projects"> <!-- projects -->
+            <h1># Projects</h1>
             <!-- alternating left/right text/image -->
             <div class="project-container">
                 <div class="project-description">
@@ -77,11 +79,12 @@
                     <p>
                         After using Strava to track my sports activities for about 3 years,
                         I
-                        longed for a better way to visualize my activities. Hence the name "Stravis". The application
-                        allows
-                        users to connect to their Strava account, download their activities and creates multiple
-                        customizable
-                        plots.
+                        created a way to visualize my activities. Hence the name "Stravis". This Django application
+                        allows the user to connect to their Strava account and synchronize their activities. Total
+                        statistics and other customizable plots are calculated and displayed.
+
+                        D3.js is used to create the "Activity calendar heatmap" and other interactivity. Bokeh is used
+                        to create most plots.
                     </p>
                     <p class="technology">
                         <span class="tech">HTML</span> - <span class="tech">CSS</span> - <span class="tech">JS</span> -
@@ -192,7 +195,12 @@
                 </div>
             </div>
         </section>
+
+        <a href="#header" id="back-to-top">
+            <h3 class="highlight" x>Back to top</h3>
+        </a>
     </main>
+    <script src="assets/js/highlightTech.js"></script>
 </body>
 
 </html>
