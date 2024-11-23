@@ -26,7 +26,8 @@ h3 {
 
 h1 {
     width: fit-content;
-    box-shadow: var(--blue) 0px 5px 0px, var(--blue) 0px 0px 0px;
+    box-shadow: var(--blue) 0px 3px 0px, var(--blue) 0px 0px 0px;
+    margin-bottom: 2rem;
 }
 
 .highlight {
@@ -141,19 +142,10 @@ img#email {
 }
 
 /* Projects section */
-#projects {
-    margin-top: 5rem;
-}
 
 p.technology {
     color: var(--gray);
-    font-size: 0.85rem;
-    user-select: none;
-}
-
-span.tech {
     font-size: 1rem;
-    color: var(--gray);
 }
 
 span.tech:hover {
@@ -165,12 +157,6 @@ span.tech.clicked {
     text-shadow: 0 0 1px var(--yellow), 0 0 2px var(--yellow), 0 0 3px var(--yellow);
 }
 
-.project-container {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
 .project-container:nth-of-type(even) {
     text-align: right;
     justify-content: end;
@@ -179,12 +165,12 @@ span.tech.clicked {
 .screenshot-container {
     display: flex;
     max-width: 100%;
-    gap: 0.5rem;
+    gap: 1rem;
     overflow: scroll;
 }
 
 .screenshot-container.even {
-    align-self: end;
+    justify-content: flex-end;
 }
 
 .screenshot {
@@ -201,13 +187,6 @@ span.tech.clicked {
 .screenshot:hover {
     opacity: 100%;
     transform: scale(1.05);
-}
-
-.project-header {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 1rem;
 }
 
 span.year {
