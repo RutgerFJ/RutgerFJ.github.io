@@ -162,6 +162,14 @@ span.tech.clicked {
     justify-content: end;
 }
 
+.project-container:nth-of-type(even) .project-description {
+    margin-left: auto;
+}
+
+.project-description {
+    width: 80%;
+}
+
 .screenshot-container {
     display: flex;
     max-width: 100%;
