@@ -178,7 +178,7 @@ span.tech.clicked {
 }
 
 .screenshot-container.even {
-    justify-content: flex-end;
+    flex-direction: row-reverse;
 }
 
 .screenshot {
